@@ -1,0 +1,422 @@
+
+#advertisementBox {
+  line-height: 40px;
+  color: #a8a8aa;
+  font-size: 12px;
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #444;
+}
+#navsBox {
+  line-height: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navBoxChild a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: .08em;
+}
+.navBoxChild a:hover,
+.navBoxChild a:focus {
+  color: #ccc;
+}
+.navBoxChild img:hover,
+.navBoxChild img:focus {
+  cursor: pointer;
+  opacity: .6;
+}
+.bigScreenImg {
+    height:600px;
+    position: absolute;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-animation-duration: .9s ;
+    animation-duration: .9s ;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function:cubic-bezier(.56,.13,.7,.49);
+    animation-timing-function:cubic-bezier(.56,.13,.7,.49);
+    z-index: 0;
+}
+#navsBoxRow {
+  margin: 0px;
+}
+.bigScreenImgCol {
+  padding: 0px;
+}
+
+#bigScreenImg_iPhone7 {
+    background-image: url(../img/iphone_7_large.jpg);
+    background-position:90px 0px;
+    background-size:auto 150%;
+    -webkit-transform: scale(1,1) translate(0%,0%);
+    transform: scale(1,1) translate(0%,0%);
+}
+
+#bigScreenBoxRow {
+    position: absolute;
+    width:100%;
+    height:600px;
+    top:0px;
+    left:0px;
+    margin: 0px;
+}
+
+
+@-webkit-keyframes screenAni1_0{
+    0%{
+        top:0%;
+        left:0%;
+    }
+    100%{
+        top:0%;
+        left:-100%;
+    }
+}
+
+
+
+@keyframes screenAni1_0{
+    0%{
+        top:0%;
+        left:0%;
+    }
+    100%{
+        top:0%;
+        left:-100%;
+    }
+}
+
+
+
+@-webkit-keyframes screenAni0_2{
+    0%{
+        opacity: 0;
+        top:0%;
+        left:-100%;
+    }
+    50%{
+        opacity: 0;
+        top:0%;
+        left:100%;
+    }
+    100%{
+        opacity: 1;
+        top:0%;
+        left:100%;
+    }
+}
+
+
+
+@keyframes screenAni0_2{
+    0%{
+        opacity: 0;
+        top:0%;
+        left:-100%;
+    }
+    50%{
+        opacity: 0;
+        top:0%;
+        left:100%;
+    }
+    100%{
+        opacity: 1;
+        top:0%;
+        left:100%;
+    }
+}
+
+
+@-webkit-keyframes screenAni2_1{
+    0%{
+        top:0%;
+        left:100%;
+    }
+    100%{
+        top:0%;
+        left:0%;
+    }
+}
+
+
+@keyframes screenAni2_1{
+    0%{
+        top:0%;
+        left:100%;
+    }
+    100%{
+        top:0%;
+        left:0%;
+    }
+}
+#bigScreenImg_hero {
+    background-image: url("../img/hero_large.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom 20% right 50%;
+    background-color:#fafafa;
+    background-size: 50%;
+    -webkit-transform:scale(1,1) translate(100%,0%);
+    transform:scale(1,1) translate(100%,0%);
+}
+
+#bigScreenImg_watch {
+    background-image: url(../img/watch_large.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: top center;
+    background-color: #f2f2f2;
+    -webkit-transform: scale(1,1) translate(100%,0%);
+    transform: scale(1,1) translate(100%,0%);
+}
+
+#bigScreenBoxShadow {
+    height:600px;
+}
+
+
+
+#bigScreenBox {
+    position:absolute;
+    top:86px;
+    left:0px;
+    width:100%;
+    height:600px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#screenToggleThreeRow {
+    position: absolute;
+    height:3px;
+    width: 100%;
+    z-index: 2;
+    top:80%;
+    left: 0%;
+}
+
+.screenToggleThreeCol {
+    height:100%;
+}
+
+.screenToggle{
+    background-color: #ccc;
+    height: 100%;
+    border-radius: calc(100%/2);
+    background-origin: border-box;
+    background-image: -webkit-gradient(linear,left top, right top,color-stop(50%, #333),color-stop(60%, #333));
+    background-image: linear-gradient(to right,#333 50%,#333 60%);
+    background-repeat: no-repeat;
+    background-position-x:-150px;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+#screenToggleThreeBox {
+    width:100%;
+    height:100%;
+}
+
+#bigScreenImg_iPhone7Button {
+    width:100px;
+    height:50px;
+    position: fixed;
+    top:0px;
+    right: 0px;
+}
+
+#iphone7HeaderRow {
+    position: absolute;
+    width:100%;
+    height:20px;
+    margin:0px;
+    top:10%;
+    color: #fff;
+}
+
+#iphone7HeaderBox {
+    text-align: center;
+}
+
+body:lang(zh){
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#hereHeaderBox {
+    text-align: center;
+}
+
+#hereHeader {
+    font-size: 48px;
+    letter-spacing: .1em;
+    text-indent: .5em;
+}
+
+#iphone7Header {
+    font-size: 32px;
+    text-indent: -1em;
+    margin-bottom: 0px;
+}
+
+#watchHeaderRow {
+    width:100%;
+    position: absolute;
+    top:5%;
+    margin:0px;
+}
+
+#watchHeader {
+    width:100%;
+    height: 100%;
+    background-image: url(../img/watch_series_2_large.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#watchHeaderBox {
+    height:50px;
+}
+
+#watchTextBox {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#heroHeaderRow {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#heorHeader_0 {
+    font-size:80px;
+}
+
+.heroHeader {
+    font-size: 30px;
+    letter-spacing: .1em;
+}
+
+#heorHeader_2 {
+    text-indent:1em;
+}
+
+
+
+.displayImg>figure{
+    height: 268px;
+    background-size: cover;
+}
+
+.displayImg{
+    padding: 2px;
+}
+
+#displayImgsBoxRow {
+    margin: 0px;
+}
+
+#displayImg1 >figure{
+    background-image: url(../img/hey_siri_large.jpg);
+}
+
+#displayImg2 >figure{
+    background-image: url(../img/bts_beats_ipad_large1.jpg);
+}
+
+#displayImg3 >figure{
+    background-image: url(../img/macbookair_large.jpg);
+}
+
+#displayImg4 >figure{
+    background-image: url(../img/how_to_shoot_on_iphone_large.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center
+}
+
+#footerTextBox {
+    margin-top: 10px;
+    line-height: 3em;
+    letter-spacing: .1em;
+    border-bottom: 1px solid #ccc;
+}
+
+#footerNavsCols {
+    line-height: 2em;
+}
+
+
+
+.footerNavHeader {
+    font-weight: 600;
+}
+
+#footerNavsColsBox ul{
+    margin-top: 40px;
+}
+
+#footerNavsColsBox ul>li:first-child>ul{
+    margin-top: 0px;
+}
+
+#footer {
+    font-size: 10px;
+}
+
+
+
+
+
+#notice_row {
+    margin-top: 30px;
+    letter-spacing: .1em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#footerBottomNavs >li{
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #ccc;
+}
+
+
+
+#footerBottom {
+    margin-top: 15px;
+}
+
+#footerBottomNavs a{
+    color: #333;
+}
+
+#footerBottomNavs li:last-child{
+    border-right: none;
+}
+
+#chinaLink {
+    color: #333;
+    vertical-align: middle;
+    line-height: 15px;
+}
+
+#chinaLink:before{
+    content: " ";
+    display: inline-block;
+    width: 15px;
+    height:15px;
+    background-image: url(../img/16.png);
+    background-size: cover;
+    vertical-align: middle;
+}
+
+
