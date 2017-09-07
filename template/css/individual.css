@@ -1,0 +1,417 @@
+
+#navBar {
+    background-color: #0b333f;
+    font-family: NavFont;
+    border-bottom:3px solid #f0bf00;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 9;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: inline-block;
+    float: none !important;
+    font-size: 1.5rem;
+    line-height: 1em;
+    color: white;
+    vertical-align: middle;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.navbar-brand:hover{
+    color: #f0bf00;
+}
+
+
+
+#html {
+    font-size: 20px;
+}
+
+.navbar-header {
+    line-height: 3rem;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav li a{
+    color:white;
+}
+
+.navbar-collapse>ul>li>a:hover{
+    background-color: #f0bf00;
+}
+
+.navbar-collapse>ul>li>a{
+    border-radius: 4px;
+}
+
+.navbar-collapse>ul>li{
+    margin-top: 10px;
+}
+
+#nav-user {
+    float: right;
+}
+
+#navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
+#navbar-toggle {
+    margin-top: 13px;
+}
+
+#navbar-toggle:hover .icon-bar{
+    opacity: .7;
+}
+
+#nav-user-text{
+    display: none;
+}
+
+
+
+#bigScreenBox{
+    padding: 0px;
+}
+
+#bigScreenBox figure{
+    width:100%;
+    height: 900px;
+    background-image: url(../img/top-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#bigScreenBoxRow1 {
+    top:200px;
+    left: 0px;
+    width:100%;
+    font-family: 'NavFont';
+}
+
+#bigScreenBoxRow1 h1{
+    font-size: 4em;
+}
+
+#bigScreenBoxRow2_2 button{
+    background-color: #f0bf00;
+}
+
+#bigScreenBoxRow2 {
+    top:350px;
+    width:100%;
+    font-family: "NavFont";
+}
+
+#h2Text {
+    font-size: 2em;
+}
+
+#mailInput {
+    font-size: 1.3125em;
+    height: 2.9em;
+    width: 100%;
+    cursor: text;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#mailInput:focus{
+    background-color: #43413e;
+    color: #eff1ef;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#notifyButton {
+    font-size: 1.3125em;
+    height: 2.9em;
+    width:200px;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}
+
+#notifyButton:hover{
+    color:#fff;
+    background-color: #43413e;
+}
+
+
+#bigScreenBoxRow2_2 .col-md-4
+,#bigScreenBoxRow2_2 .col-sm-4
+,#bigScreenBoxRow2_2 .col-md-3
+,#bigScreenBoxRow2_2 .col-sm-3{
+    padding: 0px;
+}
+
+#bigScreenBoxRow2_2 .col-md-4{
+    padding-left: 40px;
+    margin-right: 2px;
+}
+
+#bigScreenBoxRow2_2 .col-md-3{
+    margin-left: 2px;
+}
+
+
+#bigScreenBoxRow3 {
+    position: absolute;
+    top:500px;
+    left:0px;
+    width: 100%;
+}
+
+#bigScreenBoxRow3 ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#bigScreenBoxRow3 ul>li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#bigScreenBoxRow3 ul>li:first-child{
+    margin-top: 0px;
+}
+
+#bigScreenBoxRow3 ul>li:hover{
+    opacity: .7;
+}
+
+
+
+#section_3_p {
+    height:400px;
+    font-family: 'NavFont';
+    font-size: 40px;
+}
+
+#section_3_col {
+    background-color: #f0bf00;
+    -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+}
+
+#desktopTableCell {
+    height: 400px;
+    font-family: 'NavFont';
+}
+
+
+
+body {
+    background-color: #f0f0f0;
+}
+
+#section_4_h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+#section4Figure1 {
+    background-image: url(../img/portfolio-01.jpg);
+}
+
+#section4Figure2 {
+    background-image: url(../img/portfolio-02.jpg);
+}
+
+#section4Figure3 {
+    background-image: url(../img/portfolio-03.jpg);
+}
+
+#section4Figure4 {
+    background-image: url(../img/portfolio-02.jpg);
+}
+
+#section4Figure5 {
+    background-image: url(../img/portfolio-01.jpg);
+}
+
+#section4Figure6 {
+    background-image: url(../img/portfolio-03.jpg);
+}
+
+.icon-section5-cols {
+    color: #F0BF00;
+}
+
+.icon-section5-cols+h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'NavFont';
+}
+
+
+#section_5 {
+    border-top: 2px solid #fff;
+}
+
+#section5_header {
+    height: 300px;
+}
+
+#section4 {
+    padding-bottom: 70px;
+}
+
+.section5LisBox {
+    width: calc(100%-20px);
+    margin-left: 10px;
+    background-color: #e9e9e9;
+    padding: 10px 20px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.section5LisBox:hover{
+    background-color: #e3e3e3;
+    -webkit-box-shadow:1px 1px 6px #C1BAC1;
+    box-shadow:1px 1px 6px #C1BAC1;
+}
+
+#section6HeaderH1 {
+    font-family: 'NavFont';
+}
+
+
+
+#section6Figure1 {
+    background-image: url(../img/blog_img-01.jpg);
+}
+
+.section6Figure {
+    width:100%;
+    height:200px;
+    background-size: cover;
+    background-position: top;
+}
+
+.section6FigureDate {
+    color: #A5A5A2;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.section6FigureTitle {
+    padding: 0px 30px;
+    font-family: 'NavFont';
+}
+
+.section6FigureContent {
+    padding: 0px 30px;
+}
+
+.section6FigureLink {
+    padding-left: 30px;
+    font-family: 'NavFont';
+    color: #f0bf00 !important;
+    text-transform: uppercase;
+}
+
+#section6Figure2 {
+    background-image: url(../img/blog_img-02.jpg);
+}
+
+.section6ColsBox {
+    background-color: #fff;
+    margin-top:20px;
+}
+
+#section6Figure3 {
+    background-image: url(../img/blog_img-03.jpg);
+}
+
+#GoToBlogButtonBox{
+    height: 300px;
+}
+
+#GoToBlogButton{
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width:185px;
+    padding: 20px 0px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#GoToBlogButton:hover{
+    background-color: #312A1E;
+}
+
+
+
+
+
+
+
+
+
+.section7HeaderH1 {
+    font-size: 3em;
+}
+
+.section7HeaderImg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.section7ThirdPartP {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.section7ThirdPartTitleSpan {
+    font-weight: 100;
+}
+
+.section7ForthPartHeaderH1 {
+    font-size: 3em;
+}
+
+.section7FormInput {
+    height: 3.25em;
+    margin-bottom: 24px;
+}
+
+.section7FormInputTextArea {
+    margin-bottom: 20px;
+}
+
+.section7FormSubmit {
+    font-size: 1.3125em;
+    font-family: 'NavFont';
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+#footer-text {
+    margin-top: 40px;
+}
