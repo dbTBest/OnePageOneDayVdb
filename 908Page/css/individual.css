@@ -1,0 +1,67 @@
+
+#section1 {
+    background-color: rgba(30,30,30,.4);
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 1;
+    width:100%;
+}
+
+.brandImg {
+    max-width: 53px;
+    vertical-align: middle;
+}
+
+.navbarImg {
+    width: 50px
+}
+
+
+
+#brandCell {
+    height:50px;
+}
+
+#bg {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 900px;
+    background-image: url(../img/background-data-microservice.jpg);
+    background-size: cover;
+}
+
+#navbarToggle .icon-bar{
+    background-color: #fff;
+}
+
+#collapseMenu a{
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+#collapseMenu .nav>li>a{
+    opacity: .6;
+    background-color:transparent !important;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#collapseMenu .nav>li>a:hover{
+    opacity: .9;
+}
+
+#navbarToggle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height:50px;
+    opacity: .6;
+}
+
+#navbarToggle:hover{
+    opacity: .9;
+}
