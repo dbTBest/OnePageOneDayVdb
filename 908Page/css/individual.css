@@ -65,3 +65,37 @@
 #navbarToggle:hover{
     opacity: .9;
 }
+
+#section2H1Part {
+    height:300px;
+}
+
+#section2H1Part a{
+    color: white;
+}
+
+#section2ContentBox {
+    height: 900px;
+}
+
+.section2H1PartLink {
+    padding: 17px 0px;
+    min-width: 170px;
+    background-color: #3eabb8;
+    transition: all .5s ease-in-out;
+}
+
+.section2H1PartLink:nth-of-type(1){
+    background-color: transparent;
+    border-color: white;
+    border-width: 3px
+}
+
+#section2H1Part .section2H1PartLink:hover{
+    background-color: white;
+    color: #3eabb8;
+}
+
+.section2H1PartLink:nth-of-type(2){
+    margin-left: 40px;
+}
