@@ -1,7 +1,29 @@
-1 透明黑 
+1 box,navbar透明黑 
 hover:rgba(30,30,30,.9) 
 normal:rgba(30,30,30,.4)
 
-2青蓝
+2标题链接青蓝
 #3eabb8
+
+3背景灰
+#f7f7f7
+
+4小模块标题字体
+font-size:18px;
+font-weight:400;
+line-height:28px;
+
+5小模块日期注解字体
+font-size:12px;
+font-weight:700;
+font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;  //Montserrat自定义字体
+
+6通用文本字体(段落字体)
+font-size: 14px;
+line-height: 24px;
+font-weight: 400;
+
+7link字体
+font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;  //Roboto自定义字体
++6
 
