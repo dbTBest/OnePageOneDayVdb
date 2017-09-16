@@ -83,6 +83,7 @@
     padding: 17px 0px;
     min-width: 170px;
     background-color: #3eabb8;
+    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
@@ -151,4 +152,128 @@
     background-image: url(../img/background-data-microservice.jpg);
     background-size: cover;
     background-position: top;
+}
+
+.section5Row1H5 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.section5Row1H4 {
+    margin-bottom: 50px;
+}
+
+.section5Row2Col {
+    margin-top: 30px;
+}
+
+#section5 {
+    background-color: #f7f7f7;
+    padding-bottom: 150px;
+}
+
+.section5Row2ColTitle {
+    font-size:18px;
+    font-weight:400;
+    line-height:28px;
+    color: #3eabb8;
+}
+
+.section5Row2ColContentBox {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.section5Row2ColDate {
+    font-size:12px;
+    font-weight:700;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.section5Row2ColText {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.section5Row2ColLink {
+    display: inline-block;
+    font-family: font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration:none !important;
+    color: #3eabb8;
+    border-bottom: 2px solid #3eabb8;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+
+
+.section5Row2ColLinkArrow {
+    position: absolute;
+    right: 0px;
+    top:5px;
+    opacity: 0;
+    transform:translateX(60px);
+    transition: all .5s ease-in-out;
+}
+
+.section5Row2ColLink:hover .section5Row2ColLinkArrow{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.section5Row2ColLink:hover{
+    padding-right: 20px;
+}
+
+
+
+.section6LinkBoxEye {
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+.section6Link {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#section6 {
+    padding: 60px 0px;
+}
+
+
+
+.footerForm {
+    font-size: 0px;
+}
+
+.form-control {
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #fff;
+}
+
+.footerFormInputEmial {
+    margin-right: -1px;
+}
+
+.footerForm .form-control{
+    height: 50px;
+}
+
+.footerForm .form-group .footerFormSubmit {
+    width: 50px;
+}
+
+.pageComment {
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.footerContainer {
+    padding-top:50px;
 }
