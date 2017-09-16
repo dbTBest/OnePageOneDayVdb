@@ -36,3 +36,9 @@ line-height: 28px;
 font-weight: 300;
 font-size: 24px;
 line-height: 32px;
+
+10大模块居中加粗字体
+font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; ////Montserrat自定义字体
+font-size: 24px;
+font-weight: 700;
+text-transform: uppercase;
