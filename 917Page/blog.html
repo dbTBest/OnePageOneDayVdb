@@ -1,0 +1,102 @@
+<!--
+在媒体查询中定义的类出了界限就不起作用，可以将link-arrow-ani类定义在除了xs以外的所有大小中，以解决小屏幕不适应的问题。
+
+part1:
+在img的src值未设置的情况下，其为unknow,此时img必须显式设置display:inline-block,对width和height设置的值才会起作用
+-->
+
+<!--
+part2:
+如果设置navber-nav，由于他设置了float:left，float可看作是和inline-block一个layer所以没有自动width：100%
+的属性，这样的话由于宽度不够即使设置了text-center,对其之中为inline-block的li也不会水平居中
+-->
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dbBLog</title>
+    
+    <!--jquery-->
+    <script src="lib/jquery-3.2.1.js"></script>
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    
+    <!--******************************self***************************-->
+    
+    <!--self-lib-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" href="css/utilXs.css" type="text/css" />
+    <link rel="stylesheet" href="css/utilLg.css" type="text/css" />
+    <link rel="stylesheet" href="css/utilMd.css" type="text/css" />
+    <link rel="stylesheet" href="css/utilSm.css" type="text/css" />
+    
+    <!--self-styleSet.css-->
+    <link rel="stylesheet" type="text/css" href="css/styleSet.css" />
+    
+    <!--self-individual.css-->
+    <link rel="stylesheet" type="text/css" href="css/individual.css" />
+    
+    <!--self-xs.css-->
+    <link rel="stylesheet" href="css/xs.css" type="text/css" /> 
+</head>
+
+<body>
+<!--header-->
+   <header id="header">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+                   <a href="#" id="dbLogoLink">
+                      <!--**********part1-start*************-->
+                       <img src="" alt="" id="dbLogo" class="inline-block"/>
+                        <!--**********part1-end**************-->
+                    </a>
+                </div>
+           </div>
+       </div>
+   </header>
+<!--nav-->
+   <nav class="navbar">
+       <div class="container">
+           <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target="#collapseMenu">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+           </div>
+           
+           <div class="navbar-collapse collapse" id="collapseMenu">
+              <!--part2-start-->
+               <ul class="nav navbar-center-nav">
+                   <li>
+                       <a href="#" class="link-arrow-ani">
+                           link <span class="glyphicon glyphicon-arrow-right"></span>
+                        </a>
+                    </li>
+                   <li>
+                       <a href="#" class="link-arrow-ani">
+                       link <span class="glyphicon glyphicon-arrow-right"></span>
+                       </a>
+                    </li>
+                   <li>
+                       <a href="#" class="link-arrow-ani">
+                           link <span class="glyphicon glyphicon-arrow-right"></span>
+                        </a>
+                    </li>
+               </ul>
+               <!--part2-end-->
+            </div>
+       </div>
+   </nav>
+    <script src=""></script>
+</body>
+</html>
