@@ -1,0 +1,23 @@
+@import "utilLess.less";
+
+//***************header variables*******************
+@headerHeight:222px;
+@headerBgImgUrl:url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);//url();
+@headerBgImgPn:top;
+@headerBgImgSe:cover;
+@dbLogoSquareSize:50px;
+@dbLogoBgColor:#fff;
+@headerPaddingTop:( @headerHeight - @dbLogoSquareSize ) / 2;//less 的计算要有空格
+
+
+#header {
+    .height(@headerHeight);
+    .bgImgUrl(@headerBgImgUrl);
+    .bgImgPn(@headerBgImgPn);
+    .bgImgSe(@headerBgImgSe);
+    .paddingTop(@headerPaddingTop);
+}
+#dbLogo {
+    .square(@dbLogoSquareSize);
+    .bgColor(@dbLogoBgColor);
+}
