@@ -1,4 +1,4 @@
-@import "utilLess.less";
+@import "utilLessRepository.less";
 
 //***************header variables*******************
 @headerHeight:222px;
@@ -20,4 +20,34 @@
 #dbLogo {
     .square(@dbLogoSquareSize);
     .bgColor(@dbLogoBgColor);
+}
+
+
+//*****************text-box**************************
+@textBoxPadding:30px;
+@textBoxBgColor:#fff;
+
+.textBox{
+    .padding(@textBoxPadding);
+    .bgColor(@textBoxBgColor);
+}
+
+//****************footer******************************
+@footerMarginTop:50px;
+@footerTextBoxHeight:60px;
+
+#footer{
+    .marginTop(@footerMarginTop);
+}
+
+
+.footerTextBox {
+    .height(@footerTextBoxHeight);
+}
+
+//**************textpart************************
+@textPartMarginTop:20px;
+
+.textPart {
+    .marginTop(@textPartMarginTop);
 }
