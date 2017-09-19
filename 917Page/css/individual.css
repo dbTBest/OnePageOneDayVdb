@@ -1,10 +1,11 @@
-
-#collapseMenu .nav{
-    padding-top: 20px;
-}
-
 #collapseMenu .nav li:not(:first-child){
     margin-left: 10px;
 }
 
+#collapseMenu .table-cell{
+    height: 50px;
+}
 
+.navbar-toggle .icon-bar{
+    background-color: #333;
+}
