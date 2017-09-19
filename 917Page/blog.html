@@ -14,6 +14,7 @@ part2:
 
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Cache" content="no-cache">
@@ -22,81 +23,258 @@ part2:
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dbBLog</title>
-    
+
+    <!--fonts-->
+    <link rel="stylesheet" href="fonts/NavFont.css" type="text/css"/>
+
     <!--jquery-->
-    <script src="lib/jquery-3.2.1.js"></script>
-    
+    <script src="../lib/jquery-3.2.1.js"></script>
+
     <!--bootstrap-->
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
     <script src="lib/bootstrap/js/bootstrap.js"></script>
-    
+
+    <!--react-->
+    <script src="lib/react.js"></script>
+    <script src="lib/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
     <!--******************************self***************************-->
-    
+
     <!--self-lib-->
-    <link rel="stylesheet" type="text/css" href="css/util.css" />
-    <link rel="stylesheet" href="css/utilXs.css" type="text/css" />
-    <link rel="stylesheet" href="css/utilLg.css" type="text/css" />
-    <link rel="stylesheet" href="css/utilMd.css" type="text/css" />
-    <link rel="stylesheet" href="css/utilSm.css" type="text/css" />
-    
+    <link rel="stylesheet" href="css/utilLess.css" type="text/css" />
+    <link rel="stylesheet" href="css/utilXsLess.css" type="text/css" />
+    <link rel="stylesheet" href="css/utilLgLess.css" type="text/css" />
+    <link rel="stylesheet" href="css/utilMdLess.css" type="text/css" />
+    <link rel="stylesheet" href="css/utilSmLess.css" type="text/css" />
+
     <!--self-styleSet.css-->
     <link rel="stylesheet" type="text/css" href="css/styleSet.css" />
-    
+
     <!--self-individual.css-->
     <link rel="stylesheet" type="text/css" href="css/individual.css" />
-    
-    <!--self-xs.css-->
-    <link rel="stylesheet" href="css/xs.css" type="text/css" /> 
 </head>
 
-<body>
-<!--header-->
-   <header id="header">
-       <div class="container">
-           <div class="row">
-               <div class="col-md-12 col-lg-12 col-sm-12 text-center">
-                   <a href="#" id="dbLogoLink">
-                      <!--**********part1-start*************-->
-                       <img src="" alt="" id="dbLogo" class="inline-block"/>
+<body class="bg-gray">
+    <!--header-->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 text-center">
+                    <a href="#" id="dbLogoLink">
+                        <!--**********part1-start*************-->
+                        <!--   <img src="" alt="" id="dbLogo" class="inline-block"/>
                         <!--**********part1-end**************-->
+                        <span class="NavFont strong color-white" id="dbLogoText">db</span>
                     </a>
                 </div>
-           </div>
-       </div>
-   </header>
-<!--nav-->
-   <nav class="navbar">
-       <div class="container">
-           <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target="#collapseMenu">
+            </div>
+        </div>
+    </header>
+    <!--nav-->
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#collapseMenu">
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                 </button>
-           </div>
-           
-           <div class="navbar-collapse collapse" id="collapseMenu">
-              <!--part2-start-->
-               <ul class="nav navbar-center-nav">
-                   <li>
-                       <a href="#" class="link-arrow-ani">
+            </div>
+
+            <div class="navbar-collapse collapse" id="collapseMenu">
+                <div class="table-wrap">
+                    <div class="table-cell vertical-middle">
+                        <!--part2-start-->
+                        <ul class="nav navbar-center-nav">
+                            <li>
+                                <a href="#" class="link-arrow-ani">
                            link <span class="glyphicon glyphicon-arrow-right"></span>
                         </a>
-                    </li>
-                   <li>
-                       <a href="#" class="link-arrow-ani">
+                            </li>
+                            <li>
+                                <a href="#" class="link-arrow-ani">
                        link <span class="glyphicon glyphicon-arrow-right"></span>
                        </a>
-                    </li>
-                   <li>
-                       <a href="#" class="link-arrow-ani">
+                            </li>
+                            <li>
+                                <a href="#" class="link-arrow-ani">
                            link <span class="glyphicon glyphicon-arrow-right"></span>
                         </a>
-                    </li>
-               </ul>
-               <!--part2-end-->
+                            </li>
+                        </ul>
+                        <!--part2-end-->
+                    </div>
+                </div>
             </div>
-       </div>
-   </nav>
-    <script src=""></script>
+        </div>
+    </nav>
+
+    <!--textSection-->
+    <section id="textSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" id="TextBoxCol">
+                    <div class="textBox">
+                        <h1 class="textBoxH1">title</h1>
+                        <div class="textPart1 textPart">
+                            <h4 class="textBoxH3 small-mode-title-font">title4</h4>
+                            <p class="textBoxP">text text text text text text text text text text text text text text text text</p>
+                            <p class="textBoxP">text text text text text text text text text text text text text text text text</p>
+                            <p class="textBoxP">text text text text text text text text text text text text text text text text</p>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="thumbnail"><img src="http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg" alt="" class="textBoxImg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textPart2 textPart">
+                            <h4 class="textBoxH3 small-mode-title-font">title4</h4>
+                            <p class="textBoxP">text text text text text text text text text text text text text text text text</p>
+                            <p class="textBoxP">text text text text text text text text text text text text text text text text</p>
+                            <p class="textBoxP">text text text text text text text text text text text text text text text text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <footer id="footer" class="bg-111">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="table-wrap">
+                        <div class="table-cell text-center vertical-middle footerTextBox"><span class="footer-font">@db</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+   文章的组件 
+   textData为测试用的JSON对象，结构为
+   {
+   "title":...
+   ,"parts":[
+   {
+   "partTitle":...
+   ,"ps":[一段文字，一段文字，]
+   ,"imgs":[图片的URL，图片的URL] 若无图片则为空数组
+   }
+   ,...
+   ]
+   }
+   
+   ReactDOM.render(
+            <Text textData={textData}/>
+            ,document.getElementById("TextBoxCol")
+        );
+    textData为JSON对象即可，
+    TextBoxCol可以是任意类为textBox的element
+   
+   **************************************************************
+
+    <script type="text/babel">
+        var textData={
+    "title":"h1"
+    ,"parts":[
+        {
+            "partTitle":"partTitle"
+            ,"ps":[
+                "text text text text text text text text text text text text text text text text"
+                ,"text text text text text text text text text text text text text text text text"
+                ,"text text text text text text text text text text text text text text text text"
+            ]
+            ,"imgs":[
+                "http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg"
+                ,"http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg"
+            ]
+        }
+        ,{
+            "partTitle":"partTitle"
+            ,"ps":[
+                "text text text text text text text text text text text text text text text text"
+                ,"text text text text text text text text text text text text text text text text"
+                ,"text text text text text text text text text text text text text text text text"
+            ]
+            ,"imgs":[]
+        }
+    ]
+};
+        var Text=React.createClass({
+            
+            getTextBoxH1Dom:function(textBoxH1Data){
+                return <h1 className="textBoxH1">{textBoxH1Data}</h1>;
+            }
+            
+            ,getPartDom:function(partDomData){
+                var partTitle=partDomData.partTitle
+                    ,ps=partDomData.ps
+                    ,imgs=partDomData.imgs
+                    ,partTitleDom=<h4 className="textBoxH3 small-mode-title-font">{partTitle}</h4>
+                    ,psArrDom=[]
+                    ,imgsArrDom=[]
+                    ,resultArr=[]
+                ;
+                
+                for(var i in ps){
+                    psArrDom.push(<p className="textBoxP">{ps[i]}</p>);
+                }
+                
+                for(var j in imgs){
+                    imgsArrDom.push(
+                        <div className="col-lg-4 col-md-4 col-sm-6">
+                            <div className="thumbnail">
+                                <img src={imgs[j]} alt="" className="textBoxImg" />
+                            </div>
+                        </div>
+                    );
+                }
+                
+                resultArr.push(partTitleDom);
+                resultArr=resultArr.concat(psArrDom);
+                imgsArrDom.length&&(function(){resultArr.push(
+                    <div className="row">
+                    {imgsArrDom}
+                    </div>  
+                );})();
+                
+                return (
+                    <div className="textPart1 textPart">
+                    {resultArr}
+                    </div>
+                    );
+            }
+            
+            ,getPartDoms:function(partDomsData){
+                return partDomsData.map((partDomData)=>{
+                   return this.getPartDom(partDomData); 
+                });
+            }
+            
+            ,getTextDom:function(textData){
+                var textBoxH1Dom=this.getTextBoxH1Dom(textData.title);
+                var partDoms=this.getPartDoms(textData.parts);
+                var resultArr=[textBoxH1Dom,partDoms];
+                
+                return resultArr;
+            }
+            
+            ,render:function(){
+                return <div className="textBox">{this.getTextDom(this.props.textData)}</div>;
+            }
+        });
+
+        ReactDOM.render(
+            <Text textData={textData}/>
+            ,document.getElementById("TextBoxCol")
+        );
+    </script>
+    
+    -->
 </body>
+
 </html>
